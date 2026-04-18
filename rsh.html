@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Rashedul Hoque | Data Analyst & Research Assistant</title>
+
+  <style>
+    /* RESET AND BASE */
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: #faf8f6;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #ffffffcc;
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      z-index: 1000;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      color: #111;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+    nav a:hover {
+      color: #007acc;
+      transform: scale(1.05);
+    }
+
+    /* HEADER */
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #000;
+    }
+    header h3 {
+      font-weight: 400;
+      color: #007acc;
+      margin-bottom: 20px;
+    }
+    header a.button {
+      display: inline-block;
+      background: #007acc;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+    }
+    header a.button:hover {
+      background: #005fa3;
+      transform: scale(1.05);
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 900px;
+      margin: 100px auto;
+      padding: 0 20px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      border-left: 4px solid #007acc;
+      padding-left: 10px;
+      color: #007acc;
+    }
+
+    ul { margin-left: 20px; margin-bottom: 20px; }
+    li { margin-bottom: 8px; }
+
+    /* INTERACTIVE SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .skill-card {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      border-color: #007acc;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      background: #f0f8ff;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #555;
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 650px) {
+      header h1 { font-size: 2em; }
+      .skills-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Md Rashedul Hoque</h1>
+    <h3>Data Analyst & Research Assistant</h3>
+    <a class="button" href="Md_Rashedul_Hoque_CV.pdf" target="_blank">Download CV</a>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I’m a Research Assistant and aspiring Data Analyst with a solid foundation in Statistics and Computational & Quantitative Methods.
+      I specialize in institutional analytics, predictive modeling, and public health research.
+      Skilled in Python, R, SQL, and modern analytical tools, I love turning complex datasets into clear insights that drive meaningful outcomes.
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Lamar University – Research Assistant</strong> (Aug 2024 – Present)<br> Data forecasting, Markov analysis, and institutional reporting.</li>
+      <li><strong>JOptiman Consultancy LLC – Predictive Modeling Intern</strong> (May 2025 – Jul 2025)<br> SQL‑based data cleaning and machine learning for policy trend analysis.</li>
+      <li><strong>icddr,b – Research Assistant</strong> (Jan 2024 – Jul 2024)<br> Epidemiological studies using Python, GIS, and R.</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>M.Sc., Computational and Quantitative Methods</strong> – Lamar University (GPA 3.8/4) – expected May 2026</li>
+      <li><strong>M.Sc., Statistics</strong> – Comilla University (GPA 3.52/4) – Mar 2023</li>
+      <li><strong>B.Sc., Statistics</strong> – Comilla University (GPA 3.50/4) – Mar 2022</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">R</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">Power BI</div>
+      <div class="skill-card">Tableau</div>
+      <div class="skill-card">Machine Learning</div>
+      <div class="skill-card">Pandas / NumPy</div>
+      <div class="skill-card">scikit‑learn</div>
+      <div class="skill-card">Statistics / Regression</div>
+      <div class="skill-card">Data Visualization</div>
+      <div class="skill-card">SPSS / SAS</div>
+      <div class="skill-card">MySQL / PostgreSQL</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:Rashed89338@gmail.com">Rashed89338@gmail.com</a><br>
+       LinkedIn: <a href="[linkedin.com](https://www.linkedin.com/in/md-rashedul-hoque-a013b2252/)" target="_blank">linkedin.com/in/md-rashedul-hoque</a></p>
+  </section>
+
+  <footer>
+    © 2024 Md Rashedul Hoque · Built with HTML, CSS & JavaScript
+  </footer>
+
+  <script>
+    // Reveal sections when scrolled into view
+    const sections = document.querySelectorAll('section');
+    function revealOnScroll() {
+      const trigger = window.innerHeight * 0.8;
+      sections.forEach(sec => {
+        if (sec.getBoundingClientRect().top < trigger) sec.classList.add('visible');
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+
+    // Optional: interactive skill click (you can edit content easily)
+    document.querySelectorAll('.skill-card').forEach(card => {
+      card.addEventListener('click', () => {
+        alert(`Skill: ${card.textContent.trim()}`);
+      });
+    });
+  </script>
+</body>
+</html>
